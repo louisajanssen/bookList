@@ -3,7 +3,7 @@ const path = require('path')
 
 let PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 let app = express();
-let PORT = 3000 || process.env.PORT;
+let PORT = 3008 || process.env.PORT;
 
 app.use(express.json())
 app.use(express.static(PUBLIC_DIR));
