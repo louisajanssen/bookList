@@ -1,22 +1,25 @@
 import React from "react";
+import styled from 'styled-components'
 import Search from "./Search.jsx"
 import AddBook from "./AddBook.jsx"
+import Booklist from './Booklist.jsx'
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+const Title = styled.h1`
+    font-size: 1.5em;
+    text-align: center;
+    color: palevioletred;
+`;
 
-    render() {
-        return (
-    <div>
-        <h1>Louisa's Book List</h1>
-        <AddBook />
-        <Search />
-    </div>
-    
-        );
-    }
+const App = () => {
+
+    return (
+        <div>
+            <Title>Louisa's Book List</Title>
+            <AddBook />
+            <Search />
+            <Booklist />
+        </div>
+    )
 };
 
 export default App;
